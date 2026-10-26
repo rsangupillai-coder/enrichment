@@ -1,0 +1,559 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP CSA FRQ by Unit - Assignment Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .unit-section {
+            margin-bottom: 40px;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .unit-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .unit-content {
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .unit-description {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 5px solid #667eea;
+        }
+
+        .unit-description strong {
+            color: #667eea;
+        }
+
+        .frq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .frq-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+
+        .frq-card:hover {
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .frq-card h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .frq-topic {
+            background: #e7f0ff;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .frq-links {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .frq-links a {
+            padding: 6px 10px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85em;
+            transition: all 0.3s;
+        }
+
+        .frq-links a:hover {
+            background: #764ba2;
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .summary-table th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .summary-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .summary-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .unit-num {
+            font-weight: bold;
+            color: #667eea;
+            min-width: 100px;
+        }
+
+        .frq-type {
+            background: #e7f0ff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .tip-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .tip-box strong {
+            color: #856404;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.6em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .frq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AP CSA FRQ by Unit</h1>
+            <p>Assignment Guide: Which FRQ Questions to Use for Each Unit</p>
+            <p style="font-size: 0.95em; margin-top: 10px;">Created by Rani Sangupillai | PCTI-STEM Academy</p>
+        </header>
+
+        <div class="content">
+            <div class="tip-box">
+                <strong>💡 Key Insight:</strong> FRQ 1 focuses on Methods (Units 1-3), FRQ 2 on Classes (Unit 5), FRQ 3 on Arrays/ArrayLists (Units 6-7), and FRQ 4 on 2D Arrays (Unit 8). Use this guide to assign questions that match what students have learned.
+            </div>
+
+            <!-- Quick Reference Table -->
+            <h2 style="color: #667eea; margin: 30px 0 20px 0;">Quick Reference: FRQ by Unit</h2>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Unit(s)</th>
+                        <th>Topic</th>
+                        <th>FRQ Number</th>
+                        <th>Best Year(s) to Assign</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="unit-num">Units 1-3</td>
+                        <td>Primitive Types, Using Objects, Boolean & if Statements, Loops</td>
+                        <td><span class="frq-type">FRQ 1</span></td>
+                        <td>2018, 2019 (foundational)<br>2022, 2023 (intermediate)<br>2024, 2025, 2026 (exam-level)</td>
+                    </tr>
+                    <tr>
+                        <td class="unit-num">Unit 5</td>
+                        <td>Writing Classes</td>
+                        <td><span class="frq-type">FRQ 2</span></td>
+                        <td>2022, 2023, 2024, 2025, 2026</td>
+                    </tr>
+                    <tr>
+                        <td class="unit-num">Units 6-7</td>
+                        <td>Arrays & ArrayLists</td>
+                        <td><span class="frq-type">FRQ 3</span></td>
+                        <td>2019, 2022, 2023, 2024, 2025</td>
+                    </tr>
+                    <tr>
+                        <td class="unit-num">Unit 8</td>
+                        <td>2D Arrays</td>
+                        <td><span class="frq-type">FRQ 4</span></td>
+                        <td>2019, 2022, 2023, 2024, 2025, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- UNIT 1-3: FRQ 1 -->
+            <div class="unit-section">
+                <div class="unit-header">📍 UNITS 1-3: FRQ 1 - Methods & Control Structures</div>
+                <div class="unit-content">
+                    <div class="unit-description">
+                        <strong>When to assign:</strong> After teaching Unit 3 (Boolean Expressions & if Statements)<br>
+                        <strong>What it tests:</strong> Method writing, primitive types (int, double, boolean), arithmetic, boolean logic, control flow<br>
+                        <strong>Practice progression:</strong> Start with 2018-2019 (foundational) → 2022-2023 (intermediate) → 2024-2026 (exam-level)
+                    </div>
+
+                    <h4 style="color: #667eea; margin: 20px 0 15px 0;">All FRQ 1 Questions by Year (2013-2026)</h4>
+                    <div class="frq-grid">
+                        <div class="frq-card">
+                            <h4>2026 FRQ 1 - Account</h4>
+                            <div class="frq-topic">Methods, double arithmetic, int counters</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/cc086ff2a386dccd10ca588499742330" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/23538491/42382/28674" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2025 FRQ 1 - DogWalker</h4>
+                            <div class="frq-topic">Methods, int arithmetic, boolean logic</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/def52a057d3b645e1abaf35eb1873310" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18153322/37891/26605" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2024 FRQ 1 - Feeder</h4>
+                            <div class="frq-topic">Methods, int counters, boolean conditions</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/938794c76b76a09e8b7d0a5772b0ca51" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18131339/37799/26563" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2023 FRQ 1 - AppointmentBook</h4>
+                            <div class="frq-topic">Methods, int arithmetic, boolean logic</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/f25665d060f3c9de60c1c5cea2136b6a" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/17533045/36771/26224" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2022 FRQ 1 - Game</h4>
+                            <div class="frq-topic">Methods, casting, int division</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/bfc8a6fb584b1ee1a803bb82784af3a7" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/6980944/24582/17873" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2019 FRQ 1 - Calendar</h4>
+                            <div class="frq-topic">Methods, int arithmetic, boolean checks</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/9c9477242f41b32fa8f05d0231d1d3e8" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/2588318/13297/9076" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2018 FRQ 1 - Methods</h4>
+                            <div class="frq-topic">Methods, arithmetic, type selection</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/701f807a49ae1df91ab9fb7fb07e6b6a" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/2589480/13187/9011" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2017 FRQ 1 - Digits</h4>
+                            <div class="frq-topic">Methods, int arithmetic, lists</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/3989c0f1519388ebc888bf959cf2934a" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/2586167/13196/9018" target="_blank">Try It</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 5: FRQ 2 -->
+            <div class="unit-section">
+                <div class="unit-header">📍 UNIT 5: FRQ 2 - Writing Classes</div>
+                <div class="unit-content">
+                    <div class="unit-description">
+                        <strong>When to assign:</strong> After teaching Unit 5 (Writing Classes)<br>
+                        <strong>What it tests:</strong> Class design, constructors, instance variables, accessor methods, mutator methods<br>
+                        <strong>Note:</strong> FRQ 2 is not a Methods question — it's a full class design question
+                    </div>
+
+                    <h4 style="color: #667eea; margin: 20px 0 15px 0;">Available FRQ 2 Questions</h4>
+                    <div class="frq-grid">
+                        <div class="frq-card">
+                            <h4>2025 FRQ 2 - SignedText</h4>
+                            <div class="frq-topic">Class Design, constructors, methods</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/f95da1c9288eed56c5e528f6fb15204c" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18169762/37892/26606" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2024 FRQ 2 - Scoreboard</h4>
+                            <div class="frq-topic">Class Design, instance variables, methods</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/669e81541297b1644e510e36d5d6682e" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18131406/37800/26564" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2023 FRQ 2 - Sign</h4>
+                            <div class="frq-topic">Class Design, constructors, methods</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/a31583deeac1c20483677b74c74a2934" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18124369/37780/26555" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2022 FRQ 2 - Textbook</h4>
+                            <div class="frq-topic">Class Design, instance variables</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/05f19d068527eaccf82e6eda14ce6f7c" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/6991611/24649/17937" target="_blank">Try It</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNITS 6-7: FRQ 3 -->
+            <div class="unit-section">
+                <div class="unit-header">📍 UNITS 6-7: FRQ 3 - Arrays & ArrayLists</div>
+                <div class="unit-content">
+                    <div class="unit-description">
+                        <strong>When to assign:</strong> After teaching Unit 7 (ArrayLists)<br>
+                        <strong>What it tests:</strong> Array/ArrayList traversal, conditional processing, method writing with collections<br>
+                        <strong>Note:</strong> Tests both array and ArrayList concepts
+                    </div>
+
+                    <h4 style="color: #667eea; margin: 20px 0 15px 0;">Available FRQ 3 Questions</h4>
+                    <div class="frq-grid">
+                        <div class="frq-card">
+                            <h4>2025 FRQ 3 - Round</h4>
+                            <div class="frq-topic">Array/ArrayList, iteration, conditionals</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/61f5533460d0c4f00623771111fc1044" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18169892/37893/26607" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2024 FRQ 3 - WordChecker</h4>
+                            <div class="frq-topic">Array/ArrayList, searching, counting</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/72cae93e65545119e182811b3eeb403b" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18131432/37801/26565" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2023 FRQ 3 - WeatherData</h4>
+                            <div class="frq-topic">Array/ArrayList, filtering, calculations</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/e21703fa2f7734028b573a98e25cb759" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18124569/37781/26556" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2022 FRQ 3 - ReviewAnalysis</h4>
+                            <div class="frq-topic">Arrays, ArrayLists, searching</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/6bdbc35a743eee8179580e54da8f36eb" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/7001821/24698/17978" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2019 FRQ 3 - Delimiters</h4>
+                            <div class="frq-topic">ArrayLists, string manipulation, iteration</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/8c5cd3f65cee14e6b6e8d168561838e8" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/3068682/16816/11562" target="_blank">Try It</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT 8: FRQ 4 -->
+            <div class="unit-section">
+                <div class="unit-header">📍 UNIT 8: FRQ 4 - 2D Arrays</div>
+                <div class="unit-content">
+                    <div class="unit-description">
+                        <strong>When to assign:</strong> After teaching Unit 8 (2D Arrays)<br>
+                        <strong>What it tests:</strong> 2D array traversal, nested loops, row/column operations, 2D array method writing<br>
+                        <strong>Note:</strong> Most challenging FRQ — assign after solid practice on 1-3
+                    </div>
+
+                    <h4 style="color: #667eea; margin: 20px 0 15px 0;">Available FRQ 4 Questions</h4>
+                    <div class="frq-grid">
+                        <div class="frq-card">
+                            <h4>2026 FRQ 4 - GameBoard</h4>
+                            <div class="frq-topic">2D Arrays, nested loops, game logic</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/2ef2dfa8efa66d8fade058261d8d4a2b" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/23539075/42388/28677" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2025 FRQ 4 - SumOrSameGame</h4>
+                            <div class="frq-topic">2D Arrays, nested loops, calculations</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/8c1a51bd7b24f6afb16aabd5e029b919" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18169536/37894/26608" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2024 FRQ 4 - GridPath</h4>
+                            <div class="frq-topic">2D Arrays, nested loops, pathfinding</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/28c86911c2732edc65d9f9e38a47a494" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18131452/37802/26566" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2023 FRQ 4 - BoxOfCandy</h4>
+                            <div class="frq-topic">2D Arrays, counting, iteration</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/d94d4198f917d43cd3d706bbab093918" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/18128613/37796/26560" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2022 FRQ 4 - Data</h4>
+                            <div class="frq-topic">2D Arrays, nested loops, calculations</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/3240cf09cde8041d6f4d967fe16b474ec" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/7021868/24940/18025" target="_blank">Try It</a>
+                            </div>
+                        </div>
+
+                        <div class="frq-card">
+                            <h4>2019 FRQ 4 - LightBoard</h4>
+                            <div class="frq-topic">2D Arrays, nested loops, state management</div>
+                            <div class="frq-links">
+                                <a href="https://codehs.com/uploads/fc625f60123b22cc97f98ff9904800d2" target="_blank">PDF</a>
+                                <a href="https://alb.codehs.com/editor/playlist/3073097/16856/11582" target="_blank">Try It</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip-box" style="margin-top: 30px;">
+                <strong>✅ Assignment Tips:</strong><br>
+                • <strong>Start with Unit 1-3:</strong> Use FRQ 1 questions (2018-2019) as foundational practice<br>
+                • <strong>Increase difficulty:</strong> Assign 2022-2026 FRQ 1 as students become more proficient<br>
+                • <strong>Follow the unit sequence:</strong> Don't assign FRQ 4 before Unit 8 is complete<br>
+                • <strong>Mix old and new:</strong> Use older questions for practice, newest for final assessments<br>
+                • <strong>Timing:</strong> Budget 18-22 minutes per FRQ in class; students need time to write code
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Created by Rani Sangupillai | PCTI-STEM Academy</strong></p>
+            <p style="margin-top: 10px;">All links direct to College Board questions and CodeHS interactive platforms</p>
+            <p style="margin-top: 15px; font-size: 0.85em;">Last Updated: October 21, 2026</p>
+        </div>
+    </div>
+</body>
+</html>
+</body></html>
